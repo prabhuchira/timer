@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="./css/bootstrap.css" rel="stylesheet">
+        <link href="./css/main.css" rel="stylesheet">
+        <title>Timer-Peteragnus</title>
+    </head>
+
+    <body>
+        <!-- <script src="js/script.js"></script> -->
+
+        <div class="container-fluid">
+            <div class="jumbotron text-center">
+               <h1>Timer </h1>
+                <h4>Enter the time Format in <b>Hours : Minutes</b> </h4>
+
+                
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <form>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-lg-6">
+                                <input id="hourField" class="form-control" type="number" placeholder="Enter Hours" min="0" max="23">
+                                <span class="text-right">Hours</span>
+                            </div>
+                        <div class="col-lg-6">
+                            <input id="minutesField" class="form-control" type="number" placeholder="Enter Minutes" min="0" max="59">
+                            <span class="text-center">Minutes</span>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+              
+                <div class="text-center" id="main">
+
+                    <button type="submit" id="submit" class="btn btn-primary btn-lg ">Submit</button>
+                    <button type="button" id="reset" class="btn btn-danger btn-lg ">Reset</button>
+                    
+                </div>
+            </form>
+            </div>
+            
+        </div>
+
+        <h2 ></h2>
+
+        <div class="container primary one" >
+            <div class="jumbotron primary text-center">
+                <h1 class="display-4"><span id="testHours">00</span>: <span id="testMinutes">00</span>: <span id="testSeconds">00</span></h1>
+                <p class="lead">HH:MM:SS</p>
+            </div>
+        </div>
+        <script src="./js/bootstrap.js"></script>
+    </body>
+
+
+</html>
+
+
+
